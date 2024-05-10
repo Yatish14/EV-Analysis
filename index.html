@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .wrapper
+    {
+        display: flex;
+        width: 100%;
+    }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin-right: 30px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Battery Health Analysis</h2>
+<div class="wrapper">
+
+
+<div class="card">
+  <img src="Results1.png" alt="Avatar" style="width:90%">
+  <div class="container">
+    <h4><b>Voltage vs Time</b></h4> 
+    <p>The above graph represents variations in the flow of electrical potential
+        over time.</p>
+  </div>
+</div>
+<div class="card">
+  <img src="Results2.png" alt="Avatar" style="width:80%;margin-left:20px">
+  <div class="container">
+    <h4><b>Current vs Time</b></h4> 
+    <p>The above graph represents variations in the flow of electrical charge over
+        time.</p> 
+  </div>
+</div>
+<div class="card">
+  <img src="Results3.png" alt="Avatar" style="width:85%;margin-left:20px">
+  <div class="container">
+    <h4><b>Battery Percentage vs Time</b></h4> 
+    <p>The above graph shows the battery SOC computed over real time at regular time
+        intervals.</p> 
+    <p>The battery level decreases steadily over time with minimal fluctuations, 
+        indicating a stable discharge pattern.</p>
+  </div>
+</div>
+</div>
+
+</body>
+</html> 
