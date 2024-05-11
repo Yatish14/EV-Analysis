@@ -27,36 +27,289 @@
 <body>
 
 <h2>Battery Health Analysis</h2>
-<div class="wrapper">
 
+<!-- Vehicle Selection Dropdown -->
+<label for="vehicle"><b>Vehicle:</b></label>
+<select id="vehicle" onchange="showCards()">
+  <option value="vehicle1">Vehicle 1</option>
+  <option value="vehicle2">Vehicle 2</option>
+  <option value="vehicle3">Vehicle 3</option>
+  <option value="vehicle4">Vehicle 4</option>
+  <option value="vehicle5">Vehicle 5</option>
+  <option value="vehicle6">Vehicle 6</option>
+  <option value="vehicle7">Vehicle 7</option>
+  <option value="vehicle8">Vehicle 8</option>
+  <option value="vehicle9">Vehicle 9</option>
+  <option value="vehicle10">Vehicle 10</option>
+</select>
 
-<div class="card">
-  <img src="Results1.png" alt="Avatar" style="width:90%">
-  <div class="container">
-    <h4><b>Voltage vs Time</b></h4> 
-    <p>The above graph represents variations in the flow of electrical potential
-        over time.</p>
+<div class="wrapper" id="cardContainer">
+  <!-- Cards for Vehicle 1 -->
+  <div class="card vehicle1">
+    <img src="Results1.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle1">
+    <img src="Results2.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle1">
+    <img src="Results3.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 2 -->
+  <div class="card vehicle2" style="display:none;">
+    <img src="Results1-1.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle2" style="display:none;">
+    <img src="Results2-1.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle2" style="display:none;">
+    <img src="Results3-1.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 3 -->
+  <!-- Add similar card elements for Vehicle 3 -->
+  <div class="card vehicle3" style="display:none;">
+    <img src="Results1-2.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle3" style="display:none;">
+    <img src="Results2-2.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle3" style="display:none;">
+    <img src="Results3-2.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 4 -->
+  <!-- Add similar card elements for Vehicle 4 -->
+  <div class="card vehicle4" style="display:none;">
+    <img src="Results1-3.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle4" style="display:none;">
+    <img src="Results2-3.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle4" style="display:none;">
+    <img src="Results3-3.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 5 -->
+  <!-- Add similar card elements for Vehicle 5 -->
+  <div class="card vehicle5" style="display:none;">
+    <img src="Results1-4.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle5" style="display:none;">
+    <img src="Results2-4.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle5" style="display:none;">
+    <img src="Results3-4.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 6 -->
+  <!-- Add similar card elements for Vehicle 6 -->
+  <div class="card vehicle6" style="display:none;">
+    <img src="Results1-5.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle6" style="display:none;">
+    <img src="Results2-5.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle6" style="display:none;">
+    <img src="Results3-5.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 7 -->
+  <!-- Add similar card elements for Vehicle 7 -->
+  <div class="card vehicle7" style="display:none;">
+    <img src="Results1-6.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle7" style="display:none;">
+    <img src="Results2-6.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle7" style="display:none;">
+    <img src="Results3-6.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 8 -->
+  <!-- Add similar card elements for Vehicle 8 -->
+  <div class="card vehicle8" style="display:none;">
+    <img src="Results1-7.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle8" style="display:none;">
+    <img src="Results2-7.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle8" style="display:none;">
+    <img src="Results3-7.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 9 -->
+  <!-- Add similar card elements for Vehicle 9 -->
+  <div class="card vehicle9" style="display:none;">
+    <img src="Results1-8.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle9" style="display:none;">
+    <img src="Results2-8.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle9" style="display:none;">
+    <img src="Results3-8.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
+  </div>
+  
+  <!-- Cards for Vehicle 10 -->
+  <!-- Add similar card elements for Vehicle 10 -->
+  <div class="card vehicle10" style="display:none;">
+    <img src="Results1-9.png" alt="Avatar" style="width:90%">
+    <div class="container">
+      <h4><b>Voltage vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical potential over time.</p>
+    </div>
+  </div>
+  <div class="card vehicle10" style="display:none;">
+    <img src="Results2-9.png" alt="Avatar" style="width:80%;margin-left:20px">
+    <div class="container">
+      <h4><b>Current vs Time</b></h4> 
+      <p>The above graph represents variations in the flow of electrical charge over time.</p> 
+    </div>
+  </div>
+  <div class="card vehicle10" style="display:none;">
+    <img src="Results3-9.png" alt="Avatar" style="width:85%;margin-left:20px">
+    <div class="container">
+      <h4><b>Battery Percentage vs Time</b></h4> 
+      <p>The above graph shows the battery SOC computed over real time at regular intervals.</p> 
+      <p>The battery level decreases steadily over time with minimal fluctuations, indicating a stable discharge pattern.</p>
+    </div>
   </div>
 </div>
-<div class="card">
-  <img src="Results2.png" alt="Avatar" style="width:80%;margin-left:20px">
-  <div class="container">
-    <h4><b>Current vs Time</b></h4> 
-    <p>The above graph represents variations in the flow of electrical charge over
-        time.</p> 
-  </div>
-</div>
-<div class="card">
-  <img src="Results3.png" alt="Avatar" style="width:85%;margin-left:20px">
-  <div class="container">
-    <h4><b>Battery Percentage vs Time</b></h4> 
-    <p>The above graph shows the battery SOC computed over real time at regular time
-        intervals.</p> 
-    <p>The battery level decreases steadily over time with minimal fluctuations, 
-        indicating a stable discharge pattern.</p>
-  </div>
-</div>
-</div>
+
+<script>
+function showCards() {
+  var selectedVehicle = document.getElementById("vehicle").value;
+  var cards = document.querySelectorAll(".card");
+  
+  // Hide all cards
+  cards.forEach(function(card) {
+    card.style.display = "none";
+  });
+  
+  // Show cards for the selected vehicle
+  var selectedCards = document.querySelectorAll("." + selectedVehicle);
+  selectedCards.forEach(function(card) {
+    card.style.display = "block";
+  });
+}
+</script>
 
 </body>
-</html> 
+</html>
